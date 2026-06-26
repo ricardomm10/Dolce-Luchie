@@ -2,7 +2,6 @@
 
 /* ============================================================
    DOLCE LUCHIE — Hoja de estilos principal
-   Metodología: Mobile-First | Pure CSS3
    ============================================================ */
 
 /* ────────────────────────────────────────────────────────────
@@ -230,8 +229,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 58px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid var(--color-containers);
-  box-shadow: 0 2px 6px var(--color-shadow);
+ 
+  
   background: var(--color-main-bg);
   transition: transform var(--transition);
 }
