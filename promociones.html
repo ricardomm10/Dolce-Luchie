@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Luchie | Promociones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado reutilizado en todas las paginas -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Ir al inicio">
+            <span>Dolce Luchie</span>
+            <small>La magia del sabor de hogar</small>
+        </a>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="index.html">Inicio</a>
+            <a href="promociones.html" class="active">Promociones</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ordenar.html">Ordenar</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="conocenos.html">Conócenos</a>
+        </nav>
+        <a class="btn btn-primary header-action" href="ordenar.html">Ordena Ahora</a>
+    </header>
+
+    <main>
+        <!-- Presentacion de la pagina de promociones -->
+        <section class="page-hero compact-hero">
+            <p class="eyebrow">Sabores para celebrar</p>
+            <h1>Promociones Dulces</h1>
+            <p class="subtitle">Combos especiales para compartir en casa, oficina o eventos.</p>
+        </section>
+
+        <!-- Lista de promociones disponibles con imagenes y botones para el carrito -->
+        <section class="dessert-grid catalog-grid">
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80" alt="Combo merienda con macarons y mini postres">
+                <div class="card-content">
+                    <h2>Combo Merienda</h2>
+                    <p>Incluye 6 macarons, 4 mini tartas y una porción de cheesecake.</p>
+                    <strong>$18.00</strong>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Combo Merienda" data-price="18.00">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Caja sorpresa con postres variados">
+                <div class="card-content">
+                    <h2>Caja Sorpresa</h2>
+                    <p>Selección especial de postres del día con empaque pastel para regalo.</p>
+                    <strong>$22.00</strong>
+                    <button class="btn btn-small btn-mint add-to-cart" type="button" data-name="Caja Sorpresa" data-price="22.00">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Tarta decorada para cumpleanos">
+                <div class="card-content">
+                    <h2>Dulce Cumpleaños</h2>
+                    <p>Tarta decorada, velita y tarjeta personalizada para una celebración sencilla.</p>
+                    <strong>$28.00</strong>
+                    <button class="btn btn-small btn-peach add-to-cart" type="button" data-name="Dulce Cumpleaños" data-price="28.00">Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de pagina con marca, enlaces, redes sociales y metodos de pago -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a class="footer-logo" href="index.html">Dolce Luchie</a>
+            <p>La magia del sabor de hogar</p>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="Instagram">◎</a>
+            </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu del pie de pagina">
+            <a href="conocenos.html">Conócenos</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ordenar.html">Opciones de entrega</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <div class="footer-payments">
+            <div class="payment-icons" aria-label="Metodos de pago">
+                <span>VISA</span>
+                <span>●</span>
+                <span>●</span>
+                <span>₿</span>
+            </div>
+            <small>Todos los derechos reservados ©</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
