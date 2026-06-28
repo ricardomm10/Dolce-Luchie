@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Luchie | Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Encabezado con navegacion general del sitio -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Ir al inicio">
+            <span>Dolce Luchie</span>
+            <small>La magia del sabor de hogar</small>
+        </a>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="index.html">Inicio</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="catalogo.html" class="active">Catálogo</a>
+            <a href="ordenar.html">Ordenar</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="conocenos.html">Conócenos</a>
+        </nav>
+        <a class="btn btn-primary header-action" href="ordenar.html">Ordena Ahora</a>
+    </header>
+
+    <main>
+        <!-- Titulo de la pagina de catalogo -->
+        <section class="page-hero compact-hero">
+            <p class="eyebrow">Catálogo artesanal</p>
+            <h1>Postres para Cada Antojo</h1>
+            <p class="subtitle">Elige tus favoritos y completa tu pedido en pocos pasos.</p>
+        </section>
+
+        <!-- Catalogo de productos con tarjetas responsivas -->
+        <section class="dessert-grid catalog-grid">
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80" alt="Tarta de fresas">
+                <div class="card-content">
+                    <h2>Tarta de Fresas</h2>
+                    <p>Porción individual o familiar con crema vainilla.</p>
+                    <strong>$6.50</strong>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Tarta de Fresas" data-price="6.50">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80" alt="Macarons delicados">
+                <div class="card-content">
+                    <h2>Macarons Delicados</h2>
+                    <p>Caja de seis unidades en sabores variados.</p>
+                    <strong>$9.00</strong>
+                    <button class="btn btn-small btn-mint add-to-cart" type="button" data-name="Macarons Delicados" data-price="9.00">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="dessert-card">
+                <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?auto=format&fit=crop&w=700&q=80" alt="Cheesecake cremoso">
+                <div class="card-content">
+                    <h2>Cheesecake Cremoso</h2>
+                    <p>Clásico, frutos rojos o durazno suave.</p>
+                    <strong>$7.25</strong>
+                    <button class="btn btn-small btn-peach add-to-cart" type="button" data-name="Cheesecake Cremoso" data-price="7.25">Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de pagina con marca, enlaces, redes sociales y metodos de pago -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a class="footer-logo" href="index.html">Dolce Luchie</a>
+            <p>La magia del sabor de hogar</p>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="Instagram">◎</a>
+            </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu del pie de pagina">
+            <a href="conocenos.html">Conócenos</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ordenar.html">Opciones de entrega</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <div class="footer-payments">
+            <div class="payment-icons" aria-label="Metodos de pago">
+                <span>VISA</span>
+                <span>●</span>
+                <span>●</span>
+                <span>₿</span>
+            </div>
+            <small>Todos los derechos reservados ©</small>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
