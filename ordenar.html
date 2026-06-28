@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Luchie | Ordenar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado con boton destacado para pedidos -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Ir al inicio">
+            <span>Dolce Luchie</span>
+            <small>La magia del sabor de hogar</small>
+        </a>
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="index.html">Inicio</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ordenar.html" class="active">Ordenar</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="conocenos.html">Conócenos</a>
+        </nav>
+        <a class="btn btn-primary header-action" href="ordenar.html">Ordena Ahora</a>
+    </header>
+
+    <main>
+        <!-- Introduccion del formulario de registro y pedido -->
+        <section class="page-hero compact-hero">
+            <p class="eyebrow">Pedido personalizado</p>
+            <h1>Ordena tu Postre</h1>
+            <p class="subtitle">Completa tus datos y prepararemos tu pedido con mucho cariño.</p>
+        </section>
+
+        <!-- Formulario de registro y pedido -->
+        <section class="form-section">
+            <form class="order-form" action="#" method="post">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="direccion">Dirección</label>
+                <textarea id="direccion" name="direccion" rows="4" placeholder="Colonia, calle, número de casa o punto de referencia" required></textarea>
+
+                <label for="entrega">Opcion de entrega</label>
+                <select id="entrega" name="entrega" required>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="domicilio">A domicilio</option>
+                    <option value="tienda">Recoger en tienda</option>
+                </select>
+
+                <label for="pago">Forma de pago</label>
+                <select id="pago" name="pago" required>
+                    <option value="">Selecciona una forma de pago</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="transferencia">Transferencia bancaria</option>
+                </select>
+
+                <button class="btn btn-primary" type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de pagina con marca, enlaces, redes sociales y metodos de pago -->
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a class="footer-logo" href="index.html">Dolce Luchie</a>
+            <p>La magia del sabor de hogar</p>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="YouTube">▶</a>
+                <a href="#" aria-label="Instagram">◎</a>
+            </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Menu del pie de pagina">
+            <a href="conocenos.html">Conócenos</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ordenar.html">Opciones de entrega</a>
+            <a href="testimonios.html">Testimonios</a>
+        </nav>
+
+        <div class="footer-payments">
+            <div class="payment-icons" aria-label="Metodos de pago">
+                <span>VISA</span>
+                <span>●</span>
+                <span>●</span>
+                <span>₿</span>
+            </div>
+            <small>Todos los derechos reservados ©</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
