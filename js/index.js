@@ -41,6 +41,9 @@ cartWidget.innerHTML = `
             <span>Total</span>
             <strong>$0.00</strong>
         </div>
+        <div class="cart-order">
+            <a href="ordenar.html" class="btn btn-primary cart-order-btn">Ordenar ahora</a>
+        </div>
     </div>
 `;
 
@@ -119,5 +122,28 @@ cartList.addEventListener("click", (event) => {
     saveCart(items);
     renderCart();
 });
+
+// Limpia el carrito y muestra mensaje de éxito al enviar el pedido
+const orderForm = document.querySelector(".order-form");
+
+if (orderForm) {
+    orderForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        // Limpiar carrito
+        localStorage.removeItem(cartKey);
+        renderCart();
+
+        // Mostrar mensaje de éxito
+        orderForm.innerHTML = `
+            <div class="order-success">
+                <span class="order-success-icon">🎉</span>
+                <h2>¡Pedido agendado exitosamente!</h2>
+                <p>Gracias por tu compra. Prepararemos tu postre con mucho cariño y nos pondremos en contacto contigo pronto.</p>
+                <a href="catalogo.html" class="btn btn-primary">Seguir comprando</a>
+            </div>
+        `;
+    });
+}
 
 renderCart();
