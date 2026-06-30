@@ -718,6 +718,12 @@ h1 {
         grid-row: auto;
     }
 
+    .about-section.image-left .about-copy {
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+    }
+
     .about-section .eyebrow {
         text-align: center;
     }
