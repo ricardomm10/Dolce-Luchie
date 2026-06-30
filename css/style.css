@@ -407,6 +407,46 @@ h1 {
     outline: 3px solid rgba(248, 187, 208, 0.35);
 }
 
+.brand-intro,
+.developers-heading {
+    margin: 0 auto;
+    max-width: 920px;
+    padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 6vw, 6rem);
+    text-align: center;
+}
+
+.brand-intro {
+    background: linear-gradient(135deg, var(--beige-suave), rgba(255, 218, 185, 0.32));
+    border-bottom: var(--borde);
+    max-width: none;
+}
+
+.brand-intro h1 {
+    color: var(--cafe-oscuro);
+    margin-bottom: 0.4rem;
+}
+
+.brand-intro p:not(.eyebrow):not(.subtitle),
+.developers-heading p:not(.eyebrow) {
+    color: var(--cafe-latte);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.developers-heading {
+    padding-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.developers-heading h2 {
+    color: var(--cafe-oscuro);
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+}
+
 /* CSS Grid: seccion informativa con texto e imagen */
 .about-section {
     align-items: center;
@@ -459,6 +499,10 @@ h1 {
     margin-bottom: 1rem;
     font-size: 16px;
     text-align: left;
+}
+
+.developers-heading + .about-section {
+    padding-top: clamp(1.5rem, 4vw, 3rem);
 }
 
 /* CSS Grid: pie de pagina en tres columnas para marca, menu y pagos */
