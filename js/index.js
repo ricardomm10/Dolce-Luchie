@@ -137,9 +137,9 @@ if (orderForm) {
         // Mostrar mensaje de éxito
         orderForm.innerHTML = `
             <div class="order-success">
-                <span class="order-success-icon">🎉</span>
                 <h2>¡Pedido agendado exitosamente!</h2>
                 <p>Gracias por tu compra. Prepararemos tu postre con mucho cariño y nos pondremos en contacto contigo pronto.</p>
+                <p>Dolce Luchie se pondrá en contacto contigo pronto para coordinar la entrega (1-2 días hábiles) <3.</p>
                 <a href="catalogo.html" class="btn btn-primary">Seguir comprando</a>
             </div>
         `;
