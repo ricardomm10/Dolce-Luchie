@@ -1,90 +1,94 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolce Luchie | CatÃ¡logo</title>
+    <title>Dolce Luchie | Catálogo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/visual-fixes.css">
 </head>
 <body class="bg-crema text-cafe-latte font-sans">
-    <!-- Encabezado con navegacion general del sitio -->
     <header class="site-header">
         <a class="logo" href="index.html" aria-label="Ir al inicio">
             <span>Dolce Luchie</span>
             <small>La magia del sabor de hogar</small>
         </a>
-        <nav class="main-nav" aria-label="Menu principal">
+
+        <nav class="main-nav" aria-label="Menú principal">
             <a href="index.html">Inicio</a>
             <a href="promociones.html">Promociones</a>
-            <a href="catalogo.html" class="active">CatÃ¡logo</a>
+            <a href="Catalogo.html" class="active">Catálogo</a>
             <a href="testimonios.html">Testimonios</a>
-            <a href="conocenos.html">ConÃ³cenos</a>
+            <a href="conocenos.html">Conócenos</a>
         </nav>
     </header>
 
     <main>
-        <!-- Titulo de la pagina de catalogo -->
         <section class="page-hero compact-hero">
-            <p class="eyebrow">CatÃ¡logo artesanal</p>
-            <h1>Postres para Cada Antojo</h1>
-            <p class="subtitle">Elige tus favoritos y ordenalos con un solo click.</p>
+            <p class="eyebrow">Catálogo artesanal</p>
+            <h1>Postres para cada antojo</h1>
+            <p class="subtitle">Elige tus favoritos y ordénalos con un solo clic.</p>
         </section>
 
-        <!-- Catalogo de productos con tarjetas responsivas -->
-        <section class="dessert-grid catalog-grid">
+        <section class="dessert-grid catalog-grid" aria-label="Catálogo de postres">
             <article class="dessert-card">
-                <img src="img/budin.webp" alt="BudÃ­n con guineo">
+                <img src="img/budin.webp" alt="Budín con guineo">
                 <div class="card-content">
-                    <h2>BudÃ­n con guineo</h2>
-                    <p>PorciÃ³n individual de budÃ­n con guineo, muy suave y dulce para matar tus antojos.</p>
+                    <h2>Budín con guineo</h2>
+                    <p>Porción individual de budín con guineo: suave, dulce y perfecta para un antojo.</p>
                     <strong>$1.50</strong>
-                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="BudÃ­n con guineo" data-price="1.50">Agregar al carrito</button>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Budín con guineo" data-price="1.50">Agregar al carrito</button>
                 </div>
             </article>
+
             <article class="dessert-card">
                 <img src="img/pan-guineo.jpg" alt="Pan de guineo">
                 <div class="card-content">
                     <h2>Pan de guineo</h2>
-                    <p>PorciÃ³n individual de pan de guineo, delicioso y esponjoso para acompaÃ±ar tu cafÃ©.</p>
+                    <p>Porción individual de pan de guineo, delicioso y esponjoso para acompañar tu café.</p>
                     <strong>$1.00</strong>
                     <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Pan de guineo" data-price="1.00">Agregar al carrito</button>
                 </div>
             </article>
+
             <article class="dessert-card">
                 <img src="img/cheesecake-mango.webp" alt="Cheesecake de mango">
                 <div class="card-content">
-                    <h2>Cheesecake de Mango</h2>
-                    <p>PorciÃ³n indivual, clÃ¡sico cheesecake con jalea sabor a mango, diferente pero exquisito.</p>
+                    <h2>Cheesecake de mango</h2>
+                    <p>Porción individual de cheesecake clásico con jalea de mango: fresco, distinto y exquisito.</p>
                     <strong>$2.00</strong>
-                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Cheesecake de Mango" data-price="2.00">Agregar al carrito</button>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Cheesecake de mango" data-price="2.00">Agregar al carrito</button>
                 </div>
             </article>
-             <article class="dessert-card">
-                <img src="img/galleta-chocolate.jpg" alt="Chocockies">
+
+            <article class="dessert-card">
+                <img src="img/galleta-chocolate.jpg" alt="Galleta con chispas de chocolate">
                 <div class="card-content">
-                    <h2>Chocockies</h2>
-                    <p>Una galleta recien horneada con chispas de chocolate, crunchy y extragrande.</p>
+                    <h2>Chococookies</h2>
+                    <p>Galleta recién horneada con chispas de chocolate, textura crujiente y tamaño extragrande.</p>
                     <strong>$1.25</strong>
-                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Chocockies" data-price="1.25">Agregar al carrito</button>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Chococookies" data-price="1.25">Agregar al carrito</button>
                 </div>
             </article>
-             <article class="dessert-card">
+
+            <article class="dessert-card">
                 <img src="img/tres-leches.jpg" alt="Tres leches">
                 <div class="card-content">
-                    <h2>Trileche</h2>
-                    <p>PorciÃ³n individual de tresleches, refrescante y jugoso para aliviar el apetito.</p>
+                    <h2>Tres leches</h2>
+                    <p>Porción individual de tres leches, jugosa y refrescante para disfrutar en cualquier momento.</p>
                     <strong>$2.00</strong>
-                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Trileche" data-price="2.00">Agregar al carrito</button>
+                    <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Tres leches" data-price="2.00">Agregar al carrito</button>
                 </div>
             </article>
-             <article class="dessert-card">
+
+            <article class="dessert-card">
                 <img src="img/pie-manzana.jpg" alt="Pie de manzana">
                 <div class="card-content">
                     <h2>Pie de manzana</h2>
-                    <p>PorciÃ³n individual de pie de manzana, deliciosa masa rellena de manzana caramelizada.</p>
+                    <p>Porción individual con masa delicada y relleno de manzana caramelizada.</p>
                     <strong>$1.75</strong>
                     <button class="btn btn-small btn-pink add-to-cart" type="button" data-name="Pie de manzana" data-price="1.75">Agregar al carrito</button>
                 </div>
@@ -92,34 +96,34 @@
         </section>
     </main>
 
-    <!-- Pie de pagina con marca, enlaces, redes sociales y metodos de pago -->
     <footer class="site-footer">
         <div class="footer-brand">
             <a class="footer-logo" href="index.html">Dolce Luchie</a>
-            <p>La magia del sabor de hogar</p>
+            <p>La magia del sabor de hogar.</p>
             <div class="social-links" aria-label="Redes sociales">
                 <a href="#" aria-label="Facebook">f</a>
-                <a href="#" aria-label="Instagram">â—Ž</a>
+                <a href="#" aria-label="Instagram">ig</a>
             </div>
         </div>
 
-        <nav class="footer-nav" aria-label="Menu del pie de pagina">
-            <a href="conocenos.html">ConÃ³cenos</a>
+        <nav class="footer-nav" aria-label="Menú del pie de página">
+            <a href="conocenos.html">Conócenos</a>
             <a href="promociones.html">Promociones</a>
-            <a href="catalogo.html">CatÃ¡logo</a>
+            <a href="Catalogo.html">Catálogo</a>
             <a href="testimonios.html">Testimonios</a>
         </nav>
 
         <div class="footer-payments">
-            <div class="payment-icons" aria-label="Metodos de pago">
+            <p>Pedidos y entregas con atención personalizada.</p>
+            <div class="payment-icons" aria-label="Métodos de pago">
                 <span>VISA</span>
-                <span>â—</span>
-                <span>â—</span>
-                <span>â‚¿</span>
+                <span>MC</span>
+                <span>Efectivo</span>
             </div>
-            <small>Todos los derechos reservados Â©</small>
+            <small>&copy; 2026 Dolce Luchie. Todos los derechos reservados.</small>
         </div>
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>

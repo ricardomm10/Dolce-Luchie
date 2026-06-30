@@ -34,7 +34,7 @@ cartWidget.innerHTML = `
     <div class="cart-panel" aria-label="Carrito de compras">
         <div class="cart-header">
             <h2>Tu pedido</h2>
-            <button class="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+            <button class="cart-close" type="button" aria-label="Cerrar carrito">&times;</button>
         </div>
         <div class="cart-list"></div>
         <div class="cart-total">
@@ -123,24 +123,22 @@ cartList.addEventListener("click", (event) => {
     renderCart();
 });
 
-// Limpia el carrito y muestra mensaje de éxito al enviar el pedido
+// Limpia el carrito y muestra mensaje de éxito al enviar el pedido.
 const orderForm = document.querySelector(".order-form");
 
 if (orderForm) {
     orderForm.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        // Limpiar carrito
         localStorage.removeItem(cartKey);
         renderCart();
 
-        // Mostrar mensaje de éxito
         orderForm.innerHTML = `
             <div class="order-success">
                 <h2>¡Pedido agendado exitosamente!</h2>
                 <p>Gracias por tu compra. Prepararemos tu postre con mucho cariño y nos pondremos en contacto contigo pronto.</p>
-                <p>Dolce Luchie se pondrá en contacto contigo pronto para coordinar la entrega (1-2 días hábiles) <3.</p>
-                <a href="catalogo.html" class="btn btn-primary">Seguir comprando</a>
+                <p>Dolce Luchie se pondrá en contacto contigo para coordinar la entrega en 1 o 2 días hábiles.</p>
+                <a href="Catalogo.html" class="btn btn-primary">Seguir comprando</a>
             </div>
         `;
     });
