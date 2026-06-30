@@ -558,6 +558,15 @@ h1 {
     min-width: 24px;
 }
 
+.cart-order {
+    padding: 0.75rem 1rem;
+}
+
+.cart-order-btn {
+    width: 100%;
+    justify-content: center;
+}
+
 .cart-panel {
     background: rgba(255, 248, 240, 0.98);
     border: var(--borde);
@@ -636,6 +645,32 @@ h1 {
     color: var(--cafe-oscuro);
     font-weight: 800;
     padding: 0.9rem 1rem;
+}
+
+/* Seccion de exito de orden con icono y mensaje centrados */
+.order-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.order-success-icon {
+    font-size: 3.5rem;
+}
+
+.order-success h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--cafe-latte);
+}
+
+.order-success p {
+    font-family: "Lora", Georgia, serif;
+    color: var(--cafe-latte);
+    max-width: 400px;
 }
 
 /* Adaptacion para tabletas */
